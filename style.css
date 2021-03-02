@@ -1,3 +1,7 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
 header {
 	background: #BBBBBB;
 	padding: 20px 0px;
@@ -92,8 +96,7 @@ footer {
 }
 
 main {
-	width: 1080px;
-	margin: 0px auto;
+	
 }
 
 form {
@@ -164,6 +167,14 @@ td, th {
 	text-align: center;
 	font-size: 2em;
 	margin: 0 0 1em;
+	clear: left;
+}
+
+.principal {
+	background: #FEFEFE;
+	margin: 3em 0;
+	width: 1080px;
+	margin: 0px auto;
 }
 
 .principal p {
@@ -178,6 +189,56 @@ td, th {
 	font-style: italic;
 }
 
-.imagembeneficios {
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0; /*Cima, direita, baixo, esquerda*/
+}
+
+.mapa {
+	padding: 3em 0px; /*Tamanho proporcional ao tamanho da minha fonte.*/
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+	width: 1080px;
+	margin: 0px auto;
+}
+
+.mapa p {
+	margin: 0 0 2em 0; /*Tamanho proporcional ao tamanho da minha fonte.*/
+	text-align: center;
+}
+
+.beneficios {
+	margin-top: 3em 0;
+	background: #888888;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0px auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block; /*A lista está block, portanto é aqui que devemos liberar o espaço para entrar a imagem.*/
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;	
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.imagem-beneficios {
 	width: 60%;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto 0; /*Dessa forma, o vídeo ficará centralizado.*/
 }
