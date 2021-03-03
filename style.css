@@ -172,9 +172,8 @@ td, th {
 
 .principal {
 	background: #FEFEFE;
-	margin: 3em 0;
+	margin: 3em auto;
 	width: 1080px;
-	margin: 0px auto;
 }
 
 .principal p {
@@ -236,9 +235,57 @@ td, th {
 
 .imagem-beneficios {
 	width: 60%;
+	opacity: 1;
+	transition: 400ms; /*Tempo de transição.*/
+	box-shadow: 10px 10px 10px 0px #000000;
+}
+
+.imagem-beneficios:hover { /*Quando o usuário passar o mouse, verá a imagem com opacidade de 30%*/
+	width: 60%;
+	opacity: 0.3;
 }
 
 .video {
 	width: 560px;
 	margin: 2em auto 0; /*Dessa forma, o vídeo ficará centralizado.*/
+}
+
+@media screen and (max-width: 480px) {
+	.caixa-envelope-navegacao, .principal, .mapa-conteudo, .conteudo-beneficios, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static; /*Deixa de ser relativo e passa a ser estatico.Vamos sobrescrever apenas o que precisamos*/
+	}
+
+	.conteudo-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+
+	.principal {
+		margin: 2em auto;
+	}
+
+	.mapa {
+		padding: 1em;
+	}
+
+	.lista-beneficios {
+		display: inline;
+	}
+
+	.itens {
+		margin: 15px;
+		line-height: 8px;
+	}
+
+	.video {
+		margin: 1em auto -5px
+	}
+
 }
